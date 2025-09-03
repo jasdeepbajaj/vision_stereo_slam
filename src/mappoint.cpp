@@ -1,4 +1,4 @@
-#include "vslam/map_point.h"
+#include "vslam/mappoint.h"
 
 namespace vslam {
 

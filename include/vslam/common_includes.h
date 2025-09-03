@@ -8,6 +8,7 @@
 #include <string>
 #include <algorithm>
 #include <mutex>
+#include <unordered_map>
 
 #include <eigen3/Eigen/Core>
 #include <eigen3/Eigen/Geometry>

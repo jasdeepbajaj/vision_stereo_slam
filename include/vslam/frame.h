@@ -40,9 +40,9 @@ namespace vslam {
 
             Frame();
             Frame(long id, double time_stamp, const Sophus::SE3d &pose, const cv::Mat &left, const cv::Mat &right);
-            // Sophus::SE3d Pose();
-            // void SetPose(const Sophus::SE3d &pose);
-            // void SetKeyFrame();
+            Sophus::SE3d Pose();
+            void SetPose(const Sophus::SE3d &pose);
+            void SetKeyFrame();
             static Ptr CreateFrame();
     };
 }
