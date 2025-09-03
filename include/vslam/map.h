@@ -18,6 +18,10 @@ namespace vslam {
             void cleanUp();
             void insertKeyFrame(Frame::Ptr frame);
             void insertMapPoint(MapPoint::Ptr map_point);
+            LandmarksType GetAllMapPoints();
+            KeyframesType GetAllKeyFrames();
+            LandmarksType GetActiveMapPoints();
+            KeyframesType GetActiveKeyFrames();
 
         private:
             std::mutex data_mutex_;
