@@ -39,13 +39,12 @@ namespace vslam{
 
             /**
              * @brief Parameterized constructor.
-             * 
              * @param fx Focal length in x.
              * @param fy Focal length in y.
              * @param cx Principal point x.
              * @param cy Principal point y.
              * @param baseline Stereo baseline.
-             * @param pose Camera pose as SE3 transformation.
+             * @param pose pose represents the pose of the camera in stereosystem
              */
             Camera(double fx, double fy, double cx, double cy, double baseline, const Sophus::SE3d &pose);
 
