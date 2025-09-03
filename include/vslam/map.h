@@ -14,7 +14,10 @@ namespace vslam {
             using KeyframesType = std::unordered_map<unsigned long, Frame::Ptr>;
 
             Map();
-            
+
+            void cleanUp();
+            void insertKeyFrame(Frame::Ptr frame);
+            void insertMapPoint(MapPoint::Ptr map_point);
 
         private:
             std::mutex data_mutex_;
@@ -33,6 +36,8 @@ namespace vslam {
 
             // Hyper-parameter: max number of active keyframes
             int num_active_keyframes_ = 9;
+
+            void removeOldKeyFrames();
     };
 
 }
